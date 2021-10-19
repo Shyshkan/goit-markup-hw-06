@@ -688,7 +688,6 @@ img {
 .form-input:focus + .textfield {
   fill: var(--accent-color);
 }
-
 .form-input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
@@ -698,7 +697,6 @@ img {
   flex-direction: column-reverse;
   margin-bottom: 10px;
 }
-
 .label-name {
   font-size: 12px;
   line-height: 1.16;
@@ -750,7 +748,6 @@ img {
   transition: fill 250ms var(--timing-function);
   transition: border 250ms var(--timing-function);
 }
-
 .form-check:checked + .icon-check {
   fill: var(--accent-color);
   border: none;
