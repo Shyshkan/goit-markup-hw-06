@@ -469,6 +469,45 @@ footer {
 .instagram:focus {
   background-color: var(--accent-color);
 }
+
+.subscribe {
+  margin-left: 83px;
+}
+.subscribe form {
+  display: flex;
+}
+.subscribe input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: inherit;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+.subscribe-btn svg {
+  margin-left: 10px;
+}
 /* --------------------Портфолио-------------------- */
 .portfolio {
   padding-top: 94px;
@@ -598,6 +637,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px 39px 40px 41px;
 }
 .close-btn {
   position: absolute;
@@ -610,4 +650,112 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   top: 8px;
   right: 8px;
+  transition: fill 250ms var(--timing-function);
+}
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--accent-color);
+}
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15em;
+  font-weight: 700;
+  color: var(--title-text-color);
+}
+.modal input {
+  width: 100%;
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 32px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.textfield {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+.form-input {
+  transition: fill 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
+}
+.form-input:focus + .textfield {
+  fill: var(--accent-color);
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+.form {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 10px;
+}
+
+.label-name {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.form-tarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+.form-tarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.button.submit {
+  display: block;
+  min-height: 50px;
+  min-width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.form-deal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.icon-check {
+  fill: transparent;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  background-origin: border-box;
+  transition: fill 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
+}
+
+.form-check:checked + .icon-check {
+  fill: var(--accent-color);
+  border: none;
+}
+.form-deal a {
+  color: var(--accent-color);
+  margin-left: 2px;
 }
