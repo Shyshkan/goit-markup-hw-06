@@ -670,6 +670,7 @@ img {
   padding-top: 11px;
   padding-left: 32px;
   padding-bottom: 11px;
+  padding-right: 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
