@@ -471,7 +471,7 @@ footer {
 }
 
 .subscribe {
-  margin-left: 83px;
+  margin-left: auto;
 }
 .subscribe form {
   display: flex;
@@ -637,7 +637,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 39px 40px 41px;
+  padding: 40px;
 }
 .close-btn {
   position: absolute;
@@ -664,6 +664,10 @@ img {
   font-weight: 700;
   color: var(--title-text-color);
 }
+.form:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .modal input {
   width: 100%;
   margin: 0;
@@ -674,43 +678,44 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.textfield {
+.form-wrapper {
   position: relative;
+  display: block;
+}
+.form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 .modal-icon {
   position: absolute;
-  top: 35px;
-  left: 10px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 .form-input {
   transition: fill 250ms var(--timing-function);
   transition: border 250ms var(--timing-function);
 }
-.form-input:focus + .textfield {
+.form-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
 .form-input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
 }
-.form {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 10px;
-}
-.label-name {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
+.form.comment {
+  margin-bottom: 20px;
 }
 .form-tarea {
   width: 100%;
+  min-height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
-  margin-bottom: 20px;
 }
 .form-tarea::placeholder {
   font-size: 14px;
@@ -718,25 +723,15 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.button.submit {
-  display: block;
-  min-height: 50px;
-  min-width: 200px;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
 .form-deal {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.17;
+  margin-bottom: 30px;
+}
+.form-deal:hover {
+  cursor: pointer;
 }
 .icon-check {
   fill: transparent;
@@ -753,7 +748,23 @@ img {
   fill: var(--accent-color);
   border: none;
 }
+.form-deal:hover .icon-check {
+  border: 2px solid var(--accent-color);
+}
 .form-deal a {
   color: var(--accent-color);
   margin-left: 2px;
+}
+.button.submit {
+  display: block;
+  min-height: 50px;
+  min-width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
