@@ -756,7 +756,7 @@ img {
 .form-deal:hover .icon-check {
   border: 2px solid var(--accent-color);
 }
-.form-deal + a {
+.deal > a {
   display: inline-block;
   color: var(--accent-color);
   margin-left: 2px;
