@@ -723,17 +723,22 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.deal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .form-deal {
   display: flex;
   align-items: center;
   font-size: 14px;
   line-height: 1.17;
-  margin-bottom: 30px;
 }
 .form-deal:hover {
   cursor: pointer;
 }
 .icon-check {
+  display: inline-block;
   fill: transparent;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
@@ -751,7 +756,8 @@ img {
 .form-deal:hover .icon-check {
   border: 2px solid var(--accent-color);
 }
-.form-deal a {
+.form-deal + a {
+  display: inline-block;
   color: var(--accent-color);
   margin-left: 2px;
 }
