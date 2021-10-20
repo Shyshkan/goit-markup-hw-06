@@ -224,7 +224,6 @@ header {
 
 .feature-list {
   display: flex;
-  margin-left: calc(-1 * var(--card-gap));
 }
 .features-item {
   flex-basis: calc(100% / 4 - var(--card-gap));
@@ -259,7 +258,6 @@ header {
 }
 .doing-list {
   display: flex;
-  margin-left: calc(-1 * var(--card-gap));
 }
 .doing-item {
   flex-basis: calc(100% / 3 - var(--card-gap));
@@ -285,7 +283,6 @@ header {
 }
 .team-list {
   display: flex;
-  margin-left: calc(-1 * var(--card-gap));
 }
 .team-item {
   flex-basis: calc(100% / 4 - var(--card-gap));
@@ -367,7 +364,6 @@ header {
 .clients-list {
   display: flex;
   margin: 0 auto;
-  margin-left: calc(-1 * var(--card-gap));
 }
 .client-item {
   flex-basis: calc(100% / 6 - var(--card-gap));
@@ -647,6 +643,7 @@ img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   top: 8px;
   right: 8px;
@@ -731,8 +728,9 @@ img {
 .form-deal {
   display: flex;
   align-items: center;
+  margin-left: 14px;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
 }
 .form-deal:hover {
   cursor: pointer;
